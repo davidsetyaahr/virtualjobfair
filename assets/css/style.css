@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap);
+:root{
+    --yellow : #f9ba17;
+    --orange : #ec4b39;
+    --grey : #b0b1b3;
+    --green : #019548;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color : #3a4249;
+}
+.container.custom{
+    max-width: 90%;
+}
+section#hero{
+    /* background : #f6921e; */
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: right bottom !important;
+    min-height: 100vh;
+    background: url('../img/bg.png');
+}
+.nav-top ul li a{
+    color : white;
+    border : 3px solid transparent;
+    padding-left : 1.5rem !important;
+    padding-right : 1.5rem !important;
+    margin-left : 0.3rem;
+    margin-right : 0.3rem;
+}
+.nav-top ul li a:hover,.nav-top ul li.active a{
+    border-color : white;
+    border-radius: 50px;
+}
+.color-yellow{
+    color : var(--yellow);
+}
+.color-grey{
+    color : var(--grey);
+}
+.color-orange{
+    color : var(--orange);
+}
+.color-white{
+    color : white;
+}
+.color-green{
+    color : var(--green);
+}
+.bg-green{
+   background : var(--green);
+}
+.bg-grey{
+   background : #e7e7e9;
+}
+.bg-grey-rgb{
+   background : rgba(231, 231, 233,0.5);
+}
+.box-orange{
+    background : #fbb140;
+    border-radius: 10px;
+}
+.box-orange span{
+    font-size : 80px;
+    margin-bottom: 20px;
+}
+.bg-orange{
+    background-image: linear-gradient(to right, var(--orange),var(--yellow));
+}
+.logo-brand img{
+    width : 100%;
+    margin-bottom : 10px;
+}
+#about{
+    border-bottom : 15px solid var(--grey)
+}
+#info{
+    position: relative;
+}
+#info::before,#info::after{
+    content : "";
+    width : 4%;
+    padding-top : 50px;
+    position: absolute;
+    background : #fbb140;
+    top : 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+}
+#info::before{
+    left : 0px;
+}
+#info::after{
+    right : 0px;
+}
+.form-search{
+    display: flex;
+}
+.form-search input{
+    border-radius: 10px;
+}
+.form-search button{
+    background : var(--yellow);
+    border : none;
+    border-radius: 10px;
+    color : white;
+}
