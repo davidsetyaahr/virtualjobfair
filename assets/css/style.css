@@ -29,7 +29,7 @@ section#hero{
     margin-left : 0.3rem;
     margin-right : 0.3rem;
 }
-.nav-top ul li a:hover,.nav-top ul li.active a{
+.nav-top ul li a:hover,.nav-top ul li a.active{
     border-color : white;
     border-radius: 50px;
 }
@@ -68,10 +68,44 @@ section#hero{
 .bg-orange{
     background-image: linear-gradient(to right, var(--orange),var(--yellow));
 }
+.logo-brand .box p{
+    color : var(--grey);
+}
+a:hover{
+    text-decoration: none;
+}
+.logo-brand .box{
+    padding : 10px;
+    border : 1px solid transparent;
+    transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -o-transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    overflow: hidden;
+    font-size: 14px;
+}
+.logo-brand .box:hover p{
+    color : var(--yellow)
+}
 .logo-brand img{
     width : 100%;
     margin-bottom : 10px;
+    transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -o-transition: all.5s ease;
+    -moz-transition: all.5s ease;
+
 }
+.logo-brand .box:hover{
+    border-color :var(--grey);
+}
+.logo-brand .box:hover img{
+    transform: scale(1.2);    
+    -moz-transform: scale(1.2);    
+    -webkit-transform: scale(1.2);    
+    -o-transform: scale(1.2);    
+}
+
 #about{
     border-bottom : 15px solid var(--grey)
 }
