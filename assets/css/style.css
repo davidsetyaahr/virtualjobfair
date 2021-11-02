@@ -69,7 +69,7 @@ section#hero{
     background-image: linear-gradient(to right, var(--orange),var(--yellow));
 }
 .logo-brand .box p{
-    color : var(--grey);
+    color : var(--grey) !important;
 }
 a:hover{
     text-decoration: none;
