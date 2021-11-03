@@ -122,46 +122,96 @@
 
     </section>
     <section id="info" class="py-5">
-        <div class="container custom">
+        <div class="container custom" id="accordion">
             <div class="row" id="row-top">
                 <div class="col-md-3">
+                    <a data-toggle="collapse" href="#collapse1">
+                        <div class="box-orange">
+                            <h4 class="text-center color-white p-5">
+                                <span class="fa-lg fab fa-wpforms"></span>
+                                <br>
+                                <b>Pendaftaran</b>
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a data-toggle="collapse" href="#collapse2">
+                        <div class="box-orange">
+                            <h4 class="text-center color-white p-5">
+                                <span class="fa-lg fa fa-calendar-check"></span>
+                                <br>
+                                <b>Pembukaan</b>
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a data-toggle="collapse" href="#collapse3">
                     <div class="box-orange">
-                    <h4 class="text-center color-white p-5">
-                        <span class="fa-lg fab fa-wpforms"></span>
-                        <br>
-                        <b>Pendaftaran</b>
-                    </h4>
+                            <h4 class="text-center color-white p-5">
+                                <span class="fa-lg fa fa-mail-bulk"></span>
+                                <br>
+                                <b>Apply Lowongan</b>
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <div class="box-orange">
+                        <a href="#about" class="scroll">
+                            <h4 class="text-center color-white p-5">
+                            <span class="fa-lg fa fa-users-cog"></span>
+                            <br>
+                            <b>Seleksi Awal</b>
+                        </h4>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="box-orange">
-                    <h4 class="text-center color-white p-5">
-                        <span class="fa-lg fa fa-calendar-check"></span>
-                        <br>
-                        <b>Pembukaan</b>
-                    </h4>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-orange">
-                    <h4 class="text-center color-white p-5">
-                        <span class="fa-lg fa fa-mail-bulk"></span>
-                        <br>
-                        <b>Apply Lowongan</b>
-                    </h4>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="box-orange">
-                    <h4 class="text-center color-white p-5">
-                        <span class="fa-lg fa fa-users-cog"></span>
-                        <br>
-                        <b>Seleksi Awal</b>
-                    </h4>
+            <div class="row mt-3">
+                <div class="col">
+                    <div data-parent="#accordion" class="collapse" id="collapse1">
+                        <div class="card card-body color-grey">
+                            Silahkan memilih perusahaan yang akan dituju untuk melakukan apply lowongan pada menu bawah website. <br> Tanggal 10 November 2021 mendatang akan ada menu update terbaru mengenai link Virtual Room Job Market Fairnya. <br> <b>Jangan lupa untuk mengunjungi website ini lagi</b>
+                        </div>
+                    </div>                    
+                    <div data-parent="#accordion" class="collapse" id="collapse2">
+                        <div class="card card-body color-grey">
+                            <b> Pembukaan acara akan dilakukan pada 11 November 2021 :</b>
+                            a. Soft Opening Job Fair Virtual
+                            <br>
+                            b. Grand Opening JOB FAIR virtual
+                            Semua Pencaker (Pencari Kerja) wajib mengikuti acara opening dan inti secara online melalui zoom meeting. 
+                            <br>
+                            <br>
+                            
+                            - Link/kode ID zoom akan dibagikan pada tanggal 10 November 2021 di Virtual Room website dengan mengambil nomor antrian di dalamnya
+                            <br>
+                            
+                            - Icon Virtual Room akan otomatis bisa diklik pada tgl 10 November 2021 mendatang.                        
+                        </div>
+                    </div>                    
+                    <div data-parent="#accordion" class="collapse" id="collapse3">
+                        <div class="card card-body color-grey">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <td>#</td>
+                                            <td>Lowongan Pekerjaan</td>
+                                            <td>Jumlah Tersedia</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>
-    </div>
     </section>
     <div class="text-center container custom">
         <div class="row">
@@ -228,7 +278,7 @@
                     </h3>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col">
                     <div class="owl-carousel owl-theme">
                         <div class="item">
@@ -260,7 +310,7 @@
                         </div>
                     </div>             
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -472,6 +522,169 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script>
         $(document).ready(function(){
+            const job = [
+                {
+                    "name" : 'Admin sales marketing',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Asistant  Manager',
+                    'jml' : '5'
+                },
+                {
+                    "name" : 'Account Receivable Officer (ARO)',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Account Receivable Officer (ARO)',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Account Officer',
+                    'jml' : '62'
+                },
+                {
+                    "name" : 'Account Officer Leader',
+                    'jml' : '2'
+                },
+                {
+                    "name" : 'Ass. Financial Planner',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Auditor',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Br. Building Support',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Crew Store',
+                    'jml' : '15'
+                },
+                {
+                    "name" : 'Credit Marketing Officer (CMO)',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Field Demonstrator',
+                    'jml' : '2'
+                },
+                {
+                    "name" : 'Finance Administrasie Officer	',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Gudang',
+                    'jml' : '15'
+                },
+                {
+                    "name" : 'Ground Staff ',
+                    'jml' : '20'
+                },
+                {
+                    "name" : 'Kasir',
+                    'jml' : '15'
+                },
+                {
+                    "name" : 'Kabag Admin kredit',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Marketing Executive',
+                    'jml' : '215'
+                },
+                {
+                    "name" : 'Motorist',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'MRO',
+                    'jml' : '20'
+                },
+                {
+                    "name" : 'Pramuniaga',
+                    'jml' : '38'
+                },
+                {
+                    "name" : 'Product Promotor ',
+                    'jml' : '2'
+                },
+                {
+                    "name" : 'Public Relations',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Recruitment',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Remidial Officier (RO)',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Relationship Manager',
+                    'jml' : '20'
+                },
+                {
+                    "name" : 'Sales Executive',
+                    'jml' : '5'
+                },
+                {
+                    "name" : 'Sales Supervisor',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'Security ',
+                    'jml' : '2'
+                },
+                {
+                    "name" : 'Sales Agen / CS',
+                    'jml' : '11'
+                },
+                {
+                    "name" : 'Sales Counter Officer',
+                    'jml' : '1'
+                },
+                {
+                    "name" : 'SPG',
+                    'jml' : '10'
+                },
+                {
+                    "name" : 'Store Crew Body',
+                    'jml' : '25'
+                },
+                {
+                    "name" : 'Store Crew Girl ',
+                    'jml' : '25'
+                },
+                {
+                    "name" : 'Staf Admin',
+                    'jml' : '5'
+                },
+                {
+                    "name" : 'Staf Personalia',
+                    'jml' : '1'
+                },
+            ];
+            var ttl = 0
+            $.each(job, function(i,item){
+                ttl = ttl + parseInt(item.jml)
+                $("tbody").append(`
+                    <tr>
+                        <td>${i+1}</td>
+                        <td>${item.name}</td>
+                        <td>${item.jml}</td>
+                    </tr>
+                `)
+            })
+                $("tbody").append(`
+                    <tr>
+                        <td colspan='2'>Total Pekerjaan</td>
+                        <td>${ttl}</td>
+                    </tr>
+                `)
             $(".scroll").click(function(e){
                 e.preventDefault()
                 var target = $(this).attr('href');

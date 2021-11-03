@@ -60,6 +60,10 @@ section#hero{
 .box-orange{
     background : #fbb140;
     border-radius: 10px;
+    transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
 }
 .box-orange span{
     font-size : 80px;
@@ -69,7 +73,7 @@ section#hero{
     background-image: linear-gradient(to right, var(--orange),var(--yellow));
 }
 .logo-brand .box p{
-    color : var(--grey) !important;
+    color : var(--grey);
 }
 a:hover{
     text-decoration: none;
@@ -85,7 +89,7 @@ a:hover{
     font-size: 14px;
 }
 .logo-brand .box:hover p{
-    color : var(--yellow)
+    color : var(--yellow) !important
 }
 .logo-brand img{
     width : 100%;
@@ -141,4 +145,13 @@ a:hover{
     border : none;
     border-radius: 10px;
     color : white;
+}
+a[data-toggle='collapse'][aria-expanded='true'] .box-orange{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+a[data-toggle='collapse'][aria-expanded='true'] .box-orange h4{
+    color : var(--orange) !important
 }
