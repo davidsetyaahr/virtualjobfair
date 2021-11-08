@@ -167,4 +167,83 @@ a[data-toggle='collapse'][aria-expanded='true'] .box-orange h4{
 .wa:hover{
     color : var(--yellow);
 }
+.cover-video{
+    cursor: pointer;
+}
+.cover-video:hover .img span{
+    color: var(--yellow);
+}
+.cover-video:hover .img img{
+    transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+.cover-video .img img{
+    transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
+}
+.cover-video .img{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover-video h5{
+    color : #00415c
+}
+.cover-video .img span{
+    position: absolute;
+    z-index: 11;
+    color : white;
+    font-size: 40px;
+}
+.cover-video .img::before{
+    content: "";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    top : 0px;
+    left : 0px;
+    background: rgba(0, 65, 92, 0.8);
+    z-index: 10;
+}
+.thumbnail:hover span
+{
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+.thumbnail{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail::before{
+    content: "";
+    position: absolute;
+    width : 100%;
+    height: 100%;
+    top : 0px;
+    left : 0px;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+.thumbnail span{
+    transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -o-transition: all.5s ease;
 
+    position: absolute;
+    color: white;
+    z-index: 10;
+    font-size: 35px;
+    background: #ff0000;
+    border-radius: 10px;
+}
