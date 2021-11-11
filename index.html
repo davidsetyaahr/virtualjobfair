@@ -108,11 +108,11 @@
             <div class="row">
                 <div class="col">
                     <div class="font-weight-bold color-grey text-center">
-                        <h5 class="d-inline-block color-green font-weight-bold">583 Lowongan Tersedia</h5>
+                        <h5 class="d-inline-block color-green font-weight-bold">609 Lowongan Tersedia</h5>
                         &nbsp;
                         |
                         &nbsp;
-                        <h5 class="d-inline-block color-green font-weight-bold">20 Peserta Perusahaan</h5>
+                        <h5 class="d-inline-block color-green font-weight-bold">21 Peserta Perusahaan</h5>
                         &nbsp;
                         |
                         &nbsp;
@@ -254,25 +254,25 @@
                         <div class="col-md-3 col-6 mb-2">
                             <div class="bg-green p-2 text-center" style="border-radius: 10px;">
                                 <h5 class="color-yellow font-weight-bold">Days</h5>
-                                <h2 class="color-white" id="days"></h2>
+                                <h2 class="color-white" id="days">00</h2>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-2">
                             <div class="bg-green p-2 text-center" style="border-radius: 10px;">
                                 <h5 class="color-yellow font-weight-bold">Hours</h5>
-                                <h2 class="color-white" id="hours"></h2>
+                                <h2 class="color-white" id="hours">00</h2>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-2">
                             <div class="bg-green p-2 text-center" style="border-radius: 10px;">
                                 <h5 class="color-yellow font-weight-bold">Minutes</h5>
-                                <h2 class="color-white" id="minutes"></h2>
+                                <h2 class="color-white" id="minutes">00</h2>
                             </div>
                         </div>
                         <div class="col-md-3 col-6 mb-2">
                             <div class="bg-green p-2 text-center" style="border-radius: 10px;">
                                 <h5 class="color-yellow font-weight-bold">Seconds</h5>
-                                <h2 class="color-white" id="seconds"></h2>
+                                <h2 class="color-white" id="seconds">00</h2>
                             </div>
                         </div>
                     </div>
@@ -848,11 +848,11 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+//   // Output the result in an element with id="demo"
+//   document.getElementById("days").innerHTML = days;
+//   document.getElementById("hours").innerHTML = hours;
+//   document.getElementById("minutes").innerHTML = minutes;
+//   document.getElementById("seconds").innerHTML = seconds;
     
   // If the count down is over, write some text 
   if (distance < 0) {
